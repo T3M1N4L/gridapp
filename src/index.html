@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Grid Notes</title>
+
+		<!-- Android  -->
+		<meta name="theme-color" content="#000000">
+		<meta name="mobile-web-app-capable" content="yes">
+
+		<!-- iOS -->
+		<meta name="apple-mobile-web-app-title" content="grid-notes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<!-- Windows  -->
+		<meta name="msapplication-navbutton-color" content="#000000">
+		<meta name="msapplication-TileColor" content="#000000">
+
+		<!-- Pinned Sites  -->
+		<meta name="application-name" content="grid-notes">
+		<meta name="msapplication-tooltip" content="An instant grid-based pinboard for note taking in your browser.">
+		<meta name="msapplication-starturl" content="/">
+
+		<!-- Tap highlighting  -->
+		<meta name="msapplication-tap-highlight" content="no">
+
+		<!-- UC Mobile Browser  -->
+		<meta name="full-screen" content="yes">
+		<meta name="browsermode" content="application">
+
+		<!-- Main Link Tags  -->
+		<link href="./assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+		<link rel="icon" href="./assets/images/favicon-16.png" type="image/png" sizes="16x16">
+		<link rel="icon" href="./assets/images/favicon-32.png" type="image/png" sizes="32x32">
+		<link rel="icon" href="./assets/images/favicon-48.png" type="image/png" sizes="48x48">
+		<link rel="icon" href="./assets/images/favicon-57.png" type="image/png" sizes="57x57">
+		<link rel="icon" href="./assets/images/favicon-76.png" type="image/png" sizes="76x76">
+		<link rel="icon" href="./assets/images/favicon-96.png" type="image/png" sizes="96x96">
+		<link rel="icon" href="./assets/images/favicon-128.png" type="image/png" sizes="128x128">
+		<link rel="icon" href="./assets/images/favicon-192.png" type="image/png" sizes="192x192">
+		<link rel="icon" href="./assets/images/favicon-228.png" type="image/png" sizes="228x228">
+
+		<!-- Pinned Tab  -->
+		<link rel="mask-icon" href="./assets/images/favicon.svg" size="any" color="#000000">
+    
+		<!-- iOS -->
+		<link rel="apple-touch-icon" href="./assets/images/favicon-120.png" sizes="120x120">
+		<link rel="apple-touch-icon" href="./assets/images/favicon-152.png" sizes="152x152">
+		<link rel="apple-touch-icon" href="./assets/images/favicon-167.png" sizes="167x167">
+		<link rel="apple-touch-icon" href="./assets/images/favicon-180.png" sizes="180x180">
+
+		<!-- Windows -->
+		<meta name="msapplication-TileImage" content="./assets/images/favicon-144.png">
+		<meta name="msapplication-config" content="./assets/images/browserconfig.xml">
+
+		<!-- Web grid-notes  -->
+		<link rel="grid-notes" href="./grid-notes.webmanifest">
+	</head>
+	<body>
+		<noscript>
+			<main>
+				<p>Please enable Javascript in order to use all functions of grid-notes.</p>
+			</main>
+		</noscript>
+		<script type="text/javascript" src="./js/index.js"></script>
+		<script type="text/javascript">
+			if ("serviceWorker" in navigator) {
+				navigator.serviceWorker.register("./service-worker.js", { scope: "/" }).then(function (serviceWorker) {
+					console.log("Service Worker registered.");
+					console.log(serviceWorker);
+				}).catch(function (error) {
+					console.log("Error registering the Service Worker.");
+					console.log(error);
+				});
+			}
+		</script>
+  	</body>
+</html>
