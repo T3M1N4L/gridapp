@@ -33,7 +33,9 @@
     "pre-commit": "^1.2.2",
     "sass": "^1.25.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "yarn": "^1.22.22"
+  },
   "scripts": {
     "lint": "./node_modules/.bin/eslint . --fix",
     "dev": "parcel ./src/index.html --port 3000 --no-cache --open",
